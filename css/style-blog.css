@@ -1,0 +1,79 @@
+/* Blog - integrado ao design da Agência Fernanda Urbano */
+
+.blog-section {
+    padding-top: 0;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 32px;
+}
+
+.post {
+    background: var(--branco);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(61, 50, 48, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.post:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(61, 50, 48, 0.1);
+}
+
+.post-image {
+    aspect-ratio: 16/10;
+    overflow: hidden;
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: 24px;
+}
+
+.post-data {
+    font-size: 0.8125rem;
+    color: var(--marrom-500);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.post h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    color: var(--marrom-900);
+    margin-bottom: 12px;
+    line-height: 1.35;
+}
+
+.post-resumo {
+    font-size: 0.9375rem;
+    color: var(--texto-suave);
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.leia-mais {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: var(--marrom-500);
+    transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.leia-mais:hover {
+    color: var(--marrom-700);
+    gap: 12px;
+}
+
+.leia-mais i {
+    font-size: 0.875rem;
+}

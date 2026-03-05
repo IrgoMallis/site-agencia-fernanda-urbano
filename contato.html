@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Agência Fernanda Urbano</title>
+    <meta name="description" content="Entre em contato com a Agência Fernanda Urbano. Envie sua mensagem ou fale pelo WhatsApp. Resposta rápida.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <script defer src="js/navbar.js"></script>
+    <script defer src="js/rolagem-pagina.js"></script>
+    <script defer src="js/formulario-contato.js"></script>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo" aria-label="Agência Fernanda Urbano - Página inicial">
+                <img src="img/IMG-20241011-WA0042.jpg" alt="Logo Agência Fernanda Urbano">
+            </a>
+            <button class="hamburger" aria-label="Abrir menu" type="button"></button>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quem-somos.html">Quem somos</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero page-hero--banner">
+            <div class="container">
+                <span class="section-label reveal">Fale conosco</span>
+                <h1 class="page-title reveal">Contato</h1>
+                <p class="page-desc reveal">Envie sua mensagem ou entre em contato pelas redes. Retornaremos o mais breve possível.</p>
+                <div class="page-hero-destaques reveal">
+                    <span class="page-hero-destaque"><i class="bi bi-chat-dots"></i> Resposta rápida</span>
+                    <span class="page-hero-destaque"><i class="bi bi-whatsapp"></i> WhatsApp</span>
+                    <span class="page-hero-destaque"><i class="bi bi-envelope"></i> E-mail</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="contato section" id="contato">
+            <div class="container">
+                <div class="contato-grid reveal">
+                    <div class="contato-info">
+                        <h2 class="section-title" style="text-align: left; margin-bottom: 16px;">Como podemos ajudar?</h2>
+                        <p>Preencha o formulário ao lado ou utilize um dos canais abaixo. Estamos prontos para conversar sobre sua estratégia digital.</p>
+                        <div class="contato-links" style="margin-top: 24px;">
+                            <a href="https://wa.me/5511999999999?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20Agência%20Fernanda%20Urbano" target="_blank" rel="noopener noreferrer" class="contato-link" aria-label="WhatsApp">
+                                <i class="bi bi-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="https://instagram.com/seuusuario" target="_blank" rel="noopener noreferrer" class="contato-link" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                    <form id="form-contato" class="form-contato">
+                        <div class="input-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                        </div>
+                        <div class="input-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" placeholder="Como podemos ajudar?" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                    </form>
+                </div>
+                <p id="mensagem-sucesso" class="mensagem-sucesso" style="display: none;">Mensagem enviada com sucesso! Entraremos em contato em breve.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="index.html" class="logo"><img src="img/IMG-20241011-WA0042.jpg" alt="Agência Fernanda Urbano"></a>
+                    <p>Estratégias de marketing digital para potencializar sua marca e conectar você ao público certo.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Menu</h4>
+                    <nav class="footer-menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="quem-somos.html">Quem somos</a></li>
+                            <li><a href="equipe.html">Equipe</a></li>
+                            <li><a href="servicos.html">Serviços</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <div class="footer-contato">
+                        <p><i class="bi bi-geo-alt"></i> São Paulo, SP</p>
+                        <p><i class="bi bi-envelope"></i> <a href="mailto:contato@agenciafernandaurbano.com.br">contato@agenciafernandaurbano.com.br</a></p>
+                        <p><i class="bi bi-telephone"></i> <a href="tel:+5511999999999">(11) 99999-9999</a></p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Redes sociais</h4>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/seuusuario" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://wa.me/5511999999999?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-inner">
+                <p class="footer-copy">&copy; <span id="ano"></span> Agência Fernanda Urbano. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+</body>
+</html>
